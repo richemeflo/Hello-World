@@ -18,11 +18,11 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install and build
-        working-directory: ./Hello-world
+        working-directory: ./Hello-World
         run: npm install && npm run gh-build && cp dist/Hello-world/index.html dist/Hello-world/404.html
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: Hello-world/dist/Hello-world # The folder the action should deploy.
+          folder: Hello-World/dist/Hello-World # The folder the action should deploy.
