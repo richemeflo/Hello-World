@@ -34,4 +34,4 @@ jobs:
         run: npm install -g @angular/cli
       - name: Deploy
         working-directory: ./Hello-World
-        run: ng serve --open
+        run: ng build --prod
