@@ -27,6 +27,8 @@ jobs:
 
     # Runs a set of commands using the runners shell
       - name: Install npm
+        working-directory: ./Hello-World
         run: npm install
       - name: Deploy
+        working-directory: ./Hello-World
         run: ng serve --open
