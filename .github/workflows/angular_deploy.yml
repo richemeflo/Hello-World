@@ -10,7 +10,7 @@ defaults:
     working-directory: ./Hello-World
 
 jobs:
-  Tache:
+  Node-version:
     runs-on: ubuntu-latest
 
     strategy:
@@ -25,7 +25,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      
       - name: Install Dependencies
         run: |
           npm ci
