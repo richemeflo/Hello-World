@@ -7,7 +7,7 @@ on:
 defaults:
   run:
     shell: bash
-    working-directory: scripts
+    working-directory: ./Hello-World
 
 jobs:
   ci:
