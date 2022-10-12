@@ -6,7 +6,6 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/richemeflo.github.io/"
   },
   "private": true,
   "dependencies": {
