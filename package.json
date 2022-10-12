@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test"
+    "test": "ng test",
+    "build:prod": "ng build --configuration production --base-href https://richemeflo.github.io",
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
