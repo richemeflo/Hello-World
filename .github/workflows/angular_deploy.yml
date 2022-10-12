@@ -1,12 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 name: Angular GitHub
 on:
-  push:
+  pull-request:
+    types: [closed]
     branches:
       - main
 
 jobs:
   build:
+    if: github.event.pull_request.merged == 'true'
     runs-on: ubuntu-latest
 
     strategy:
